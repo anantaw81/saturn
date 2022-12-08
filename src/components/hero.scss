@@ -1,0 +1,117 @@
+@import '../assets/scss/variables';
+
+.c-hero{
+  display: flex;
+  background-color: $background-color;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .hero-left{
+    flex: 1;
+    padding-right: 20px;
+
+    & h1{
+      color: white;
+      letter-spacing: 1px;
+    }
+
+    & p{
+      color: white;
+    }
+
+    & .hero-cta{
+      display: flex;
+
+      & button{
+        background-color: $button-bg;
+        border-radius: 4px;
+        padding: 10px 20px 10px 20px;
+        margin-right: 20px;
+        border: none;
+      }
+
+      & .cta-scroll{
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        & div{
+          width: 15px;
+          height: 15px;
+          border-width: 1px;
+          border-radius: 100%;
+          border-color: $white;
+          padding: 10px;
+          border-style: solid;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & img{
+            width: 10px;
+          }
+        }
+
+        & span{
+          margin-left: 10px;
+          font-size: 14px;
+          align-items: center;
+        }
+      }
+
+
+    }
+
+
+  }
+  .hero-right{
+    flex: 1;
+
+    & .card{
+      border-radius: 4px;
+      display: inline-block;
+
+      & img{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: -5px;
+      }
+
+      & .card-info{
+        background-color: $card-color;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        color: $white;
+        padding: 10px;
+        font-size: 14px;
+
+        & div{
+           display: flex;
+           justify-content: space-between;
+        }
+
+        & .info-head{
+          margin-bottom: 10px;
+          align-items: center;
+
+          & img{
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .bg-yellow{
+    background-color: $yellow;
+  }
+
+  .bg-orange{
+    background-color: $orange;
+  }
+
+  .s-underline{
+    border-bottom: 4px solid $green;
+  }
+}

@@ -3,6 +3,7 @@ import profile2User from "../assets/images/profile-2user.png"
 import usa from "../assets/images/usa.png"
 import logo from "../assets/images/logo.png"
 import "./homepage.scss"
+import Hero from '../components/Hero'
 
 const Homepage = () => {
   return (
@@ -29,7 +30,7 @@ const Homepage = () => {
         </div>
       </section>
       <section id='hero'>
-      
+        <Hero/>
       </section>
     </main>
   )
