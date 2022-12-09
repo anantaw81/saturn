@@ -5,6 +5,7 @@
   background-color: $background-color;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 30px;
 
   .hero-left{
     flex: 1;
@@ -16,11 +17,13 @@
     }
 
     & p{
+      margin-top: 30px;
       color: white;
     }
 
     & .hero-cta{
       display: flex;
+      margin-top: 50px;
 
       & button{
         background-color: $button-bg;
@@ -66,10 +69,13 @@
   }
   .hero-right{
     flex: 1;
+    display: flex;
+    justify-content: space-around;
 
     & .card{
       border-radius: 4px;
       display: inline-block;
+      height: fit-content;
 
       & img{
         margin-top: 20px;
@@ -105,10 +111,12 @@
 
   .bg-yellow{
     background-color: $yellow;
+    margin-top: 30px;
   }
 
   .bg-orange{
     background-color: $orange;
+    margin-top: 150px;
   }
 
   .s-underline{
