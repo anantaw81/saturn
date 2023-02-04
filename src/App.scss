@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import './assets/scss/variables';
+@import './assets/scss/base';
+@import './assets/scss/layout';
+@import './assets/scss/typography';
+
 
 .c-saturn{
-  padding: 0;
-  margin: 0;
 }
+

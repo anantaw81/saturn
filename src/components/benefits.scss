@@ -1,0 +1,67 @@
+@import '../assets/scss/variables';
+
+@mixin b-color($color){
+    .benefit{
+    &-icon {
+      border-color: $color;
+      border-style: solid;
+      border-width: 1px;
+    }
+    &-wiggles {
+      background-color: $color;
+      opacity: 30%;
+    }}
+  }
+
+.c-benefits{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6em;
+  padding-bottom: 2em;
+
+  .benefit{
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      height: 100px;
+      width: 100px;
+      color: aquamarine;
+      background-color: #124851;
+      border-radius: 32px;
+      margin-right: 2em;
+    }
+
+    &-wiggles {
+      height: 46px;
+      width: 46px;
+    }
+
+    &-title {
+      color: white;
+    }
+
+    &-subtitle {
+      font-size: 17px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  .b-yellow {
+    @include b-color(#F49A50)
+  }
+
+  .b-blue {
+    @include b-color(#1EB2BE)
+  }
+
+  .b-green {
+    @include b-color(#1CBD00)
+  }
+
+  .b-pale {
+    @include b-color(#FEC85B)
+  }
+
+}

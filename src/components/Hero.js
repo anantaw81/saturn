@@ -9,12 +9,12 @@ import iconorange from '../assets/images/ic-orange.png'
 
 const Hero = () => {
   return (
-    <div className='c-hero'>
+    <div className='c-hero container'>
       <div className='hero-left'>
-        <h1>
+        <h1 className='title-s'>
           The Next Gen Payment <span className='s-underline'>Method</span> 
         </h1>
-        <p>
+        <p className='body-text'>
           Learn how two big banks, BBVA and ABN AMRO, are responding and changing according to sustainability principles.
         </p>
         <div className='hero-cta'>
@@ -25,7 +25,7 @@ const Hero = () => {
             <div>
               <img src={mouse} alt="" />
             </div>
-            <span>Scroll Down</span>
+            <span className='body-text'>Scroll Down</span>
           </div>
         </div>
       </div>

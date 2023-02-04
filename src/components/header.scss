@@ -1,0 +1,50 @@
+@import '../assets/scss/variables';
+
+.c-header{
+    color: $white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  
+    .header-logo{
+        display: flex;
+        align-items: center;
+        & img{
+        max-width: 30px; 
+        }
+      }
+
+      .header-menu{
+        list-style: none;
+        display: flex;
+
+        & li{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      .header-user{
+        display: flex;
+        align-items: center;
+        & img{
+          max-width: 27px;
+          padding-right: 5px;
+        }
+        & div{
+          display: flex;
+          align-items: center;
+          background-color: $background-shade;
+          padding: 6px 10px 6px 10px ;
+          border-radius: 30px;
+
+          & img{
+            max-width: 29px;
+            max-height: 29px;
+            padding-right: 3px;
+          }
+        }
+      }
+}

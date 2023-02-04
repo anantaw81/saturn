@@ -1,36 +1,18 @@
 import React from 'react'
-import profile2User from "../assets/images/profile-2user.png"
-import usa from "../assets/images/usa.png"
-import logo from "../assets/images/logo.png"
 import "./homepage.scss"
 import Hero from '../components/Hero'
+import Header from '../components/Header'
+import Benefits from '../components/Benefits'
 
 const Homepage = () => {
   return (
     <main className='c-homepage'>
-      <section id='header' className='s-header'>
-        <div className='header-logo'>
-          <img src={logo}/>
-          <span>Deisuko</span>
-        </div>
-        <div>
-          <ul className='header-menu'>
-            <li>Platform</li>
-            <li>Resources</li>
-            <li>Company</li>
-            <li>Pricing</li>
-          </ul>
-        </div>
-        <div className='header-user'>
-          <img src={profile2User} alt="" srcset="" />
-          <div>
-            <img src={usa} alt="" />
-            <span>USA</span>
-          </div>
-        </div>
+      <section id='header'>
+        <Header/>
       </section>
       <section id='hero'>
         <Hero/>
+        <Benefits/>
       </section>
     </main>
   )
