@@ -1,9 +1,30 @@
 @import '../assets/scss/variables';
 
 .c-hero{
-  display: flex;
+  // display: flex;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  position: relative;
+  overflow: hidden;
+
+  .stack-front{
+    // z-index: 3;
+    position: relative;
+    display: flex;
+  }
+
+  .stack-back {
+    // z-index: 1;
+    position: absolute;
+    font-size: 400px;
+    line-height: 600px;
+    right: -200px;
+    background: linear-gradient(180deg, #124851 9.81%, #0F383A 73.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 
   .hero-left{
     flex: 1;
@@ -70,12 +91,13 @@
     display: flex;
     justify-content: space-around;
 
+
     & .card{
       border-radius: 4px;
       display: inline-block;
       height: fit-content;
-
-      & img{
+      
+      & > img{
         margin-top: 20px;
         margin-left: 20px;
         margin-right: 20px;

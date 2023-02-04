@@ -1,0 +1,17 @@
+// margin and padding. ex: m-t-10
+
+$spaceamounts: (0, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24, 26, 28, 30, 32, 36, 40, 46, 48, 52, 56, 60, 64, 68);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+
+    m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px;
+    }
+
+    p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px;
+    }
+  }
+}
