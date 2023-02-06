@@ -1,0 +1,67 @@
+.c-banner {
+  position: relative;
+  height: 1400px;
+  .banner {
+    &-title{
+      color: #131523;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 60%;
+    }
+
+    &-placeholder {
+      
+      // overflow: hidden;
+    }
+
+    &-shadow {
+      position: absolute;
+      z-index: 2;
+      top: 30%;
+      left: 35%;
+      width: 35%;
+    }
+
+    &-line {
+      position: absolute;
+      z-index: 1;
+      top: 30%;
+      left: 0;
+      width: 100%;
+    }
+
+    &-arrow {
+      position: absolute;
+      z-index: 1;
+      width: 15%;
+      bottom: 20%;
+      left: 8%;
+    }
+
+    &-sparkle{
+      position: absolute;
+      z-index: 1;
+      width: 10%;
+      right: 8%;
+      top: 20%;
+    }
+
+    &-person {
+      position: absolute;
+      z-index: 3;
+      width: 30%;
+      top: 21%;
+      left: 37%;
+    }
+
+
+    &-circle-orange {
+      position: absolute;
+      z-index: 2;
+      width: 10%;
+      background-color: #E87E4B;
+    }
+  }
+}
