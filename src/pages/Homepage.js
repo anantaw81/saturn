@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Benefits from '../components/Benefits'
 import Footer from '../components/Footer'
 import Banner from '../components/Banner'
+import HowItWork from '../components/HowItWork'
 
 const Homepage = () => {
   return (
@@ -18,6 +19,9 @@ const Homepage = () => {
       </section>
       <section id='banner'>
         <Banner/>
+      </section>
+      <section id='howitwork'>
+        <HowItWork/>
       </section>
       <section id='footer'>
         <Footer/>

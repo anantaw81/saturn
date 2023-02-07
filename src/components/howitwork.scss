@@ -1,0 +1,51 @@
+.c-hiw {
+  display: flex;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  .hiw{
+    &-left{
+      display: flex;
+      flex-grow: 3;
+      justify-content: center;
+    }
+    &-right{
+      flex-grow: 4;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &-square {
+      color: white;
+      display: flex;
+      height: 313px;
+      width: 318px;
+      padding: 50px 42px;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(137.33deg, #FEC85B -10.79%, #DB7747 75.77%, #1CBD00 149.02%);
+      border-radius: 16px;
+    }
+
+
+    &-option {
+      display: flex;
+      color: white;
+      gap: 16px;
+      width: 50%;
+    }
+
+    &-data-title{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &-data-content{
+      font-size: 18px;
+    }
+
+
+  }
+  
+}
