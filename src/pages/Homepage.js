@@ -6,6 +6,7 @@ import Benefits from '../components/Benefits'
 import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import HowItWork from '../components/HowItWork'
+import RequestDemo from '../components/RequestDemo'
 
 const Homepage = () => {
   return (
@@ -19,6 +20,9 @@ const Homepage = () => {
       </section>
       <section id='banner'>
         <Banner/>
+      </section>
+      <section id='requestdemo'>
+        <RequestDemo/>
       </section>
       <section id='howitwork'>
         <HowItWork/>
