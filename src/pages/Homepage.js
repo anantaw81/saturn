@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import HowItWork from '../components/HowItWork'
 import RequestDemo from '../components/RequestDemo'
+import Payme from '../components/Payme'
 
 const Homepage = () => {
   return (
@@ -26,6 +27,9 @@ const Homepage = () => {
       </section>
       <section id='howitwork'>
         <HowItWork/>
+      </section>
+      <section id='payme'>
+        <Payme/>
       </section>
       <section id='footer'>
         <Footer/>
