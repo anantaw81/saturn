@@ -1,3 +1,5 @@
+@import './variables';
+
 // Components like Button, Card, Input, etc
 
 // Buttons
@@ -41,5 +43,27 @@
     z-index: -1;
     transition: all 0.4s;
   }
+}
 
+.btn-base {
+  border-radius: 8px;
+  padding: 25px 43px;
+  font-size: 18px;
+  line-height: 18px;
+  border: none;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+.btn-yellow {
+  background-color: $yellow;
+  color: $blue-dark-color;
+}
+
+.btn-green-pale {
+  background-color: $green-pale-color;
+  color: $blue-dark-color;
 }

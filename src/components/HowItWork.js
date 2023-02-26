@@ -1,8 +1,25 @@
 import React from 'react';
 import './howitwork.scss';
-import hiw_icon from "../assets/images/hiw/hiw-icon.png";
 
 function HowItWork() {
+  const options = [{
+    title: "Data Secure",
+    body: "We keep your data safe",
+    img: "data-secure"
+  }, {
+    title: "24/7 Support",
+    body: "We keep your data safe",
+    img: "247-secure"
+  }, {
+    title: "Account Data",
+    body: "We keep your data safe",
+    img: "account-data"
+  }, {
+    title: "Multiple Actions",
+    body: "We keep your data safe",
+    img: "multiple-actions"
+  }]
+
   return (
     <div className='c-hiw container'>
       <div className='hiw-left'>
@@ -16,14 +33,14 @@ function HowItWork() {
         </div>
       </div>
       <div className='hiw-right'>
-          {[1,2,3,4].map((data) =>
-        <div className='hiw-option'>
+          {options.map((data, index) =>
+        <div className='hiw-option' key={index}>
           <div className='hiw-icon'>
-            <img src={hiw_icon}></img>
+            <img src={require("../assets/images/hiw/" + "account-data" + ".png")}></img>
           </div>
           <div className='hiw-data'>
-            <div className='hiw-data-title'>Data Secure {data}</div>
-            <div className='hiw-data-content'>We keep your data save</div>
+            <div className='hiw-data-title'>{data.title}</div>
+            <div className='hiw-data-content'>{data.body}</div>
           </div> 
         </div>
           )}

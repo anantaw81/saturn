@@ -1,12 +1,18 @@
 .c-payme {
   display: flex;
+  align-items: center;
+  justify-content: center;
   .payme{
     &-left {
-      
+      width: 40%;
     }
 
     &-right {
+      width: 60%;
+    }
 
+    &-image{
+      width: 100%;
     }
   }
 }

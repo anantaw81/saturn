@@ -11,8 +11,13 @@
     &-right{
       flex-grow: 4;
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: flex-end;
+      flex-basis: 50%;
+      column-gap: 10%;
+      row-gap: 15%;
+      align-content: center;
+
     }
 
     &-square {
@@ -32,7 +37,6 @@
       display: flex;
       color: white;
       gap: 16px;
-      width: 50%;
     }
 
     &-data-title{
@@ -44,7 +48,6 @@
     &-data-content{
       font-size: 18px;
     }
-
 
   }
   

@@ -44,22 +44,14 @@
       display: flex;
       margin-top: 50px;
 
-      & button{
-        background-color: $button-bg;
-        border-radius: 4px;
-        padding: 10px 20px 10px 20px;
-        margin-right: 20px;
-        border: none;
-      }
-
       & .cta-scroll{
         display: flex;
         align-items: center;
         color: $white;
 
-        & div{
-          width: 15px;
-          height: 15px;
+        & > div{
+          width: 70px;
+          height: 70px;
           border-width: 1px;
           border-radius: 100%;
           border-color: $white;
@@ -69,15 +61,13 @@
           align-items: center;
           justify-content: center;
 
-          & img{
-            width: 10px;
+          & > img{
+            width: 20px;
           }
         }
 
         & span{
-          margin-left: 10px;
-          font-size: 14px;
-          align-items: center;
+          white-space: nowrap;
         }
       }
 

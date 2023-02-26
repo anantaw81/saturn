@@ -22,11 +22,11 @@ const Hero = () => {
             Learn how two big banks, BBVA and ABN AMRO, are responding and changing according to sustainability principles.
           </p>
           <div className='hero-cta'>
-            <button>
+            <button className='btn-base btn-green-pale m-r-30'>
               Request Demo
             </button>
             <div className='cta-scroll'>
-              <div>
+              <div className='m-r-20'>
                 <img src={mouse} alt="" />
               </div>
               <span className='body-text'>Scroll Down</span>

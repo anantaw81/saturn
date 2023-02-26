@@ -25,7 +25,7 @@ function Footer() {
             <img></img>
             <input type='text'></input>
           </div>
-          <div className='footer-button'>Request Demo</div>
+          <div className='btn-base btn-yellow display-inline-block'>Request Demo</div>
         </div>
       </div>
     </div>

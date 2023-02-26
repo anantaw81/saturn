@@ -1,21 +1,13 @@
 .c-rd {
   display: flex;
   flex-flow: row;
+  align-items: center;
   .rd {
     &-right{
       flex-grow: 1;
     }
     &-left{
       flex-grow: 1;
-    }
-    &-button{
-      background-color: black;
-      color: white;
-      border-radius: 8px;
-      padding: 25px 43px;
-      font-size: 18px;
-      line-height: 18px;
-      border: none;
     }
   }
 }

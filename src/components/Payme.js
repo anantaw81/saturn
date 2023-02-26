@@ -1,22 +1,23 @@
 import React from 'react'
 import './payme.scss'
+import payme from "../assets/images/payme/payme.png";
 
 function Payme() {
   return (
     <div className='c-payme container'>
       <div className='payme-left'>
-        <div className='payme-title title'>
+        <div className='payme-title title m-b-20'>
           Pay By Check, Without Any of the Hassle.
         </div>
-        <div className='payme-content body-text'>
+        <div className='payme-content body-text m-b-30'>
           Learn how two big banks, BBVA and ABN AMRO, are responding and changing according to sustainability principles. Learn how
         </div>
-        <div className='payme-button'>
-          Request Demo
+        <div className='btn-base btn-black display-inline-block'>
+          Requests Demo
         </div>
       </div>
       <div className='payme-right'>
-
+        <img className='payme-image' src={payme} alt="payme" />
       </div>
     </div>
   )

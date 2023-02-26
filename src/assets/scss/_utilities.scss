@@ -15,3 +15,14 @@ $sides: (top, bottom, left, right);
     }
   }
 }
+
+
+// display
+
+$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex' 'table' 'table-cell';
+
+  @each $display in $displays {
+    .display-#{$display} {
+      display: #{$display};
+    }
+  }
