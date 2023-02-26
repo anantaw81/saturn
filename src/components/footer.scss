@@ -8,11 +8,11 @@
     }
 
     &-left {
-      flex: 3;
+      width: 60%;
     }
 
     &-right {
-      flex: 2;
+      width: 40%;
     }
 
     &-title {
@@ -27,37 +27,42 @@
     }
 
     &-social {
-      display: flex;
-      gap: 36px;
+      display: table;
+      border-spacing: 20px 0;
+      margin-left: -20px;
 
       &-circle {
         height: 49px;
         width: 49px;
         background-color: #FEC85B;
         border-radius: 50%;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
       }
     }
 
     &-input {
-      background-color: #0F2F31;
+      display: flex;
+      row-gap: 20px;
+      flex-direction: column;
+    }
 
-      & > input[type=text] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          box-sizing: border-box;
-          background-color: #0F2F31;
-          border-radius: 15px;
-          // background-image: url('searchicon.png');
-          background-position: 10px 10px;
-          background-repeat: no-repeat;
-          padding-left: 40px;
+    &-button {
+      display: flex;
+      justify-content: end;
+    }
 
-        }
-
-      & > input[type=text]:focus {
-          background-color: lightblue;
-        }
+    &-logo {
+      display: flex;
+      align-items: center;
+      column-gap: 2%;
+      & > p {
+        color: white;
+      }
+      & > img {
+        height: 60px;
+      }
     }
   }
 }

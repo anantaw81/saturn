@@ -67,3 +67,38 @@
   background-color: $green-pale-color;
   color: $blue-dark-color;
 }
+
+
+// Input 
+
+.form-input img {
+  position: absolute;
+}
+
+.form-input i {
+  position: absolute;
+}
+  
+.form-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+  
+.icon {
+  padding: 22px;
+  color: green;
+  text-align: center;
+}
+  
+.input-field {
+  width: 100%;
+  padding: 25px 25px;
+  text-align: start;
+  background-color: #0F2F31;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding-left: 75px;
+}
+  
