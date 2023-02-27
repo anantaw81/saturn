@@ -7,8 +7,8 @@ import './header.scss'
 function Header() {
   return (
     <section id='header' className='c-header container'>
-      <div className='header-logo'>
-        <img src={logo}/>
+      <div className='header-logo scale-up-center'>
+        <img className='' src={logo}/>
         <span className='subtitle-2'>Deisuko</span>
       </div>
       <div>

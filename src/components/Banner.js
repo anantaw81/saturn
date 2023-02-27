@@ -9,6 +9,7 @@ import banner_paypal from "../assets/images/banner/banner-paypal.png";
 import banner_person from "../assets/images/banner/banner-person.png";
 import banner_visa from "../assets/images/banner/banner-visa.png";
 import banner_services from "../assets/images/banner/banner-services.png";
+import banner_users from "../assets/images/banner/banner-users.png";
 // import banner_thropy from "../assets/images/banner/banner_thropy.png";
 
 function Banner() {
@@ -18,7 +19,7 @@ function Banner() {
         <div className='title banner-title-container p-t-60'><div className='banner-title'>Send Your Money From Anywhere You Like</div></div>
         <div className='banner-placeholder'>
           <div className='banner-layer-1'>
-            <img className='banner-shadow' src={banner_shadow}></img>
+            <img className='banner-shadow scale-up-center' src={banner_shadow}></img>
             <div className="banner-circle-orange"></div>
             <img className='banner-line' src={banner_line}></img>
             <div className='banner-circle-yellow'></div>
@@ -29,6 +30,7 @@ function Banner() {
             <img className='banner-visa' src={banner_visa}></img>
             <img className='banner-mc' src={banner_mc}></img>
             <img className='banner-services' src={banner_services}></img>
+            <img className='banner-users' src={banner_users}></img>
             {/* <img className='banner-thropy' src={banner_thropy}></img> */}
           </div>
         </div>

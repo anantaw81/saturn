@@ -1,0 +1,125 @@
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+
+
+
+
+
+
+// let us begin 
+
+// example https://codepen.io/team/keyframers/pen/RwKoMmb
+@keyframes image-in {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.image-in {
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+}
+
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.text-sliding-left{
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;  
+}
+
+// src : https://codepen.io/scootman/pen/xLJmYQ
+
+@keyframes cinematicInOut {
+  0% {
+    text-shadow:0 0 1em white;
+    opacity:0;
+    margin-left:-.5em;
+  }
+  25% {
+    text-shadow:0 0 0 white;
+    opacity:1;
+    margin-left:0;
+  }
+  75% {
+    text-shadow:0 0 0 white;
+    opacity:1;
+    margin-left:0;
+  }
+  100% {
+    text-shadow:0 0 1em white;
+    opacity:0;
+    margin-left:0;
+  }
+}
+
+
+.cinematic-text {
+  animation: cinematicInOut 5s ease-in-out 2s;
+}
+
+
+// src : https://codepen.io/alvarotrigo/pen/ExvqdNa
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+// letter spacing, src: https://www.tutorialrepublic.com/codelab.php?topic=css3&file=animate-letter-spacing-property
+
+@keyframes letter-spacing-in {
+    0% {letter-spacing: 10px;}
+}

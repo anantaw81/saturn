@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
         <div className='hero-right'>
           <div className='card bg-yellow' >
-            <img src={iconyellow} alt="" />
+            <img className='image-in' src={iconyellow} alt="" />
             <div className='card-info'>
               <div className='info-head'>
                 <span>Credit Card</span>
@@ -58,7 +58,7 @@ const Hero = () => {
             </div>
           </div>
           <div className='card bg-orange' >
-            <img src={iconorange} alt="" />
+            <img className='image-in' src={iconorange} alt="" />
             <div className='card-info'>
               <div className='info-head'>
                 <span>Credit Card</span>
