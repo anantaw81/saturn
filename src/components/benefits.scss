@@ -8,8 +8,7 @@
       border-width: 1px;
     }
     &-wiggles {
-      background-color: $color;
-      opacity: 30%;
+      color: $color;
     }}
   }
 
@@ -30,6 +29,14 @@
       background-color: #124851;
       border-radius: 32px;
       margin-right: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > img {
+        align-self: center;
+      }
+
     }
 
     &-wiggles {

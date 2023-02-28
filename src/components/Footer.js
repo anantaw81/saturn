@@ -6,7 +6,7 @@ import wallet from "../assets/images/footer/wallet.png";
 import fb from "../assets/images/footer/fb.png";
 import linkedin from "../assets/images/footer/linkedin.png";
 import twitter from "../assets/images/footer/twitter.png";
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/footer/logo.svg"
 
 function Footer() {
   return (

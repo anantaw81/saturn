@@ -7,7 +7,21 @@
       display: flex;
       flex-grow: 3;
       justify-content: center;
+      position: relative;
     }
+
+    &-anchor {
+      position: absolute;
+      left: -20%;
+      bottom: -20%;
+    }
+
+    &-highlight{
+      position: absolute;
+      right: -10%;
+      top: -24%;
+    }
+
     &-right{
       flex-grow: 4;
       display: flex;
@@ -17,7 +31,6 @@
       column-gap: 10%;
       row-gap: 15%;
       align-content: center;
-
     }
 
     &-square {

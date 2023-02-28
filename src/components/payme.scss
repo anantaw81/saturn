@@ -1,18 +1,38 @@
 .c-payme {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  .payme{
-    &-left {
-      width: 40%;
-    }
-
-    &-right {
-      width: 60%;
-    }
-
-    &-image{
-      width: 100%;
+  position: relative;
+  overflow: hidden;
+  .stack-back{
+    position: absolute;
+    background-color: white;
+    font-size: 300px;
+    line-height: 600px;
+    right: -50px;
+    top: -150px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    z-index: 1;
+    opacity: 70%;
+  }
+  .stack-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .payme{
+      &-left {
+        width: 40%;
+      }
+  
+      &-right {
+        width: 60%;
+      }
+  
+      &-image{
+        width: 100%;
+      }
     }
   }
 }
