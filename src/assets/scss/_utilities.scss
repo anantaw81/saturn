@@ -1,8 +1,15 @@
 @import './mixins';
 
-
 // need to theming color and heading-text
 
+// color
+// primary [light, dark]
+// secondary [light, dark]
+// tertiary [light, dark]
+// range[lightest, lighter, light, med, dark, darker, darkest]
+
+// heading
+// h1-h6, body, caption, small
 
 // border
 $borderamount: (top, bottom);
@@ -87,6 +94,13 @@ $ellipsislines: 1 2 3;
   }
 }
 
+// middle text 
+.middle-text {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
 // text weight
 $weights: ('bold': 700, 'semibold':600 'reguler': 400);
 @each $weight, $size in $weights{
@@ -153,7 +167,7 @@ $sides: (top, bottom, left, right);
 
 // display
 
-$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex' 'table' 'table-cell';
+$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex' 'table' 'table-cell' 'grid';
 
 @each $display in $displays {
   .display-#{$display} {
