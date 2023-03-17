@@ -55,7 +55,7 @@ $floats: left right unset inherit none;
 
 // text align
 $alignments: center justify left right;
-@each $alignment in $aligments {
+@each $alignment in $alignments {
   .text-align-#{$alignment}{
     text-align: #{$alignment};
   }
@@ -102,7 +102,7 @@ $ellipsislines: 1 2 3;
 }
 
 // text weight
-$weights: ('bold': 700, 'semibold':600 'reguler': 400);
+$weights: ('bold': 700, 'semibold':600, 'reguler': 400);
 @each $weight, $size in $weights{
   .text-weight-#{$weight}{
     text-transform: $size ;
