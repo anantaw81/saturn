@@ -1,4 +1,138 @@
-// margin and padding. ex: m-t-10
+@import './mixins';
+
+
+// need to theming color and heading-text
+
+
+// border
+$borderamount: (top, bottom);
+$border-arrow: (left, right);
+
+@each $space in $borderamount{
+  @each $side in $border-arrow{
+    .no-border-radius-#{$space}-#{$side}{
+      border-#{$space}-#{$side}-radius: 0;
+    }
+  }
+}
+
+.no{
+  &-border {
+    border: 0 !important;
+  }
+
+  &-border-radius{
+    border-radius: 0 !important;
+  }
+}
+
+
+// cursor
+$cursors: auto crosshair default grab help none pointer text zoom-in zoom-out;
+
+@each $cursor in $cursors{
+  .cursor-#{$cursor}{
+    cursor: $cursor;
+  }
+}
+
+
+// float 
+$floats: left right unset inherit none;
+@each $float in $floats{
+  .float-#{$float}{
+    float: $float;
+  }
+}
+
+
+// text align
+$alignments: center justify left right;
+@each $alignment in $aligments {
+  .text-align-#{$alignment}{
+    text-align: #{$alignment};
+  }
+}
+
+// fontsize 
+$fontsizes: 0 4 5 6 8 10 12 15 16 20 24 26 28 30 32 36 40 46 48 64;
+
+@each $fontsize in $fontsizes {
+  .fs-#{$fontsize}{
+    font-size: #{$fontsize};
+  }
+}
+
+
+// text decoration
+$textdecorations : overline line-through underline;
+
+@each $decoration in $textdecorations {
+  .text-#{$decoration}{
+    text-decoration: $decoration;
+  }
+}
+
+// ellipsis
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+$ellipsislines: 1 2 3;
+@each $line in $ellipsislines{
+  .ellipsis-#{$line}-line{
+    @include ellipsis(#{$line})
+  }
+}
+
+// text weight
+$weights: ('bold': 700, 'semibold':600 'reguler': 400);
+@each $weight, $size in $weights{
+  .text-weight-#{$weight}{
+    text-transform: $size ;
+  }
+}
+
+// text transform 
+$transforms: capitalize lowercase uppercase italic;
+
+@each $transform in $transforms{
+  .text-#{$transform}{
+    text-transform: $transform;
+  }
+}
+
+// overflow 
+$overflows: inherit initial auto scroll hidden visible unset;
+
+@each $overflow in $overflows{
+  .overflow-#{$overflow}{
+    overflow: $overflow;
+  }
+}
+
+
+// position
+$positions: relative absolute fixed sub super unset;
+
+@each $position in $positions {
+  .position-#{$position}{
+    position: $position;
+  }
+}
+
+// margin and padding.
+.no{
+  &-margin{
+    margin: 0 !important;
+  }
+
+  &-padding{
+    padding: 0!important;
+  }
+}
 
 $spaceamounts: (0, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24, 26, 28, 30, 32, 36, 40, 46, 48, 52, 56, 60, 64, 68);
 $sides: (top, bottom, left, right);
@@ -21,8 +155,70 @@ $sides: (top, bottom, left, right);
 
 $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex' 'table' 'table-cell';
 
-  @each $display in $displays {
-    .display-#{$display} {
-      display: #{$display};
-    }
+@each $display in $displays {
+  .display-#{$display} {
+    display: #{$display};
   }
+}
+
+// vertical align
+$v-aligns: top bottom middle sub super unset;
+
+@each $v-align in $v-aligns{
+  .v-align-#{$v-align}{
+    vertical-align: #{$v-align};
+  }
+}
+
+// width
+$widths: 100 90 75 50 25;
+
+@each $width in $widths{
+  .w-#{$width}{
+    width: #{$width +'%'};
+  }
+}
+
+
+// height
+$heights: 100 90 75 50 25;
+
+@each $height in $heights {
+  .w-#{$height} {
+    height: #{$height +'%'};
+  }
+}
+
+// z-index
+
+$indexs: 0 4 5 8 10 12 15 16 20 24 25 28 30 32 36 40 44 48 64;
+
+@each $index in $indexs {
+  .index-#{$index}{
+    z-index: $index;
+  }
+}
+
+/// flex system
+// align items
+$alignItems: flex-start flex-end center baseline stretch;
+
+@each $alignItem in $alignItems{
+  .items-#{$alignItem}{
+    align-items: #{$alignItem};
+  }
+}
+
+// justify content
+$justifyContents: flex-start flex-end center space-between space-around space-evenly;
+
+@each $justifyContent in $justifyContents{
+  .justify-#{$justifyContent} {
+    justify-content: #{$justifyContent};
+  }
+} 
+
+
+
+
+

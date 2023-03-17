@@ -44,8 +44,21 @@
   }
 }
 
+@keyframes image-left {
+  from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
 .image-in {
   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0.5s backwards;
+}
+
+.image-left{
+  animation: image-left 1s cubic-bezier(0.5, 0, 0.1, 1) 0.5s backwards;
 }
 
 
@@ -214,3 +227,35 @@
 }
 
 
+
+// underline, ex: https://codepen.io/michellebarker/pen/MWJajOb
+
+@keyframes underlineShow{
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// parralax : https://codepen.io/samdbeckham/pen/OPXPNp
+$parallax__layers: 6;
+
+@for $i from 0 through $parallax__layers {
+  $x: ($parallax__layers - $i) / 2;
+  .parallax__layer__#{$i}{
+     transform: translateZ(-100 * $x#{px}) scale($x + 1);
+  }
+}
+
+
+// hover tilt effect : https://codepen.io/nxworld/pen/vrpJZN
+// Example only, it just one side
+
+.hover-point:nth-child(7):hover ~ .box-contents {
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: center bottom;
+  transform: perspective(1000px) rotateX(-10deg);
+}

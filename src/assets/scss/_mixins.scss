@@ -1,0 +1,35 @@
+
+
+// responsive mixins
+
+@mixin mobile {
+  @media screen and (max-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $screen-sm) and (max-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $screen-md) {
+    @content;
+  }
+}
+
+
+// ellipsis mixins
+@mixin ellipsis($clamp) {
+  max-width: 100%;
+  word-wrap: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

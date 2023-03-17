@@ -130,6 +130,29 @@
   }
 
   .s-underline{
-    border-bottom: 4px solid $green;
+    position: relative;
+    // border-bottom: 4px solid $green;
+    // transform: translate3d(-100%, 0, 0);
+    // content: '';
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 0.1em;
+    // background-color: hotpink;
+    // opacity: 100%;
+    // transition: opacity 300ms, transform 300ms;
+    // animation: underlineShow 1s ease-in-out 1s;
+  }
+  .s-underline::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hotpink;
+    opacity: 100%;
+    animation: image-left 1s cubic-bezier(0.5, 0, 0.1, 1) 0.5s backwards;
   }
 }
